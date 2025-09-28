@@ -14,6 +14,7 @@ import java.util.*;
         mapSet.put(222, "Santosh");
         mapSet.put(333, "Tarun"); // "Dileep" is overwritten
         mapSet.put(444, "Sanjeev");
+        mapSet.put(444, "Sanjeev");
 
         // Sort values alphabetically
         List<String> sortedValues = new ArrayList<>(mapSet.values());
