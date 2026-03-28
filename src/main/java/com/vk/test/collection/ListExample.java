@@ -17,6 +17,7 @@ public class ListExample {
 		 list.add("aman");
 		 list.add("suresh");
 		 System.out.println(list);
+		 
 		
 		 
 //		 List<String> list1 = new LinkedList<>();
