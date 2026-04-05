@@ -1,0 +1,52 @@
+
+
+
+
+
+/* --  Interview points  -- */
+
+/*
+ * 7. isAlive() Definition
+ * 
+ * isAlive() checks whether a thread is still running or not.
+ */
+
+/*
+ * 8. setPriority() Definition
+ * 
+ * setPriority() sets thread priority
+ */
+
+/*
+ * 9. getPriority() Definition
+ * 
+ * getPriority() returns the priority of a thread.
+ */
+
+
+
+
+
+
+/**   
+ 
+Synchronization
+Synchronization ensures that multiple threads do not 
+interfere with each other while accessing shared resources. 
+It helps prevent data inconsistency and race conditions.
+  */
+
+
+/**
+Deadlock
+Deadlock occurs when two or more threads wait indefinitely
+for resources locked by each other. 
+Java provides techniques to avoid and 
+resolve deadlocks.
+
+*/
+
+
+
+
+
