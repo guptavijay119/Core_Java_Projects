@@ -1,0 +1,34 @@
+
+
+Q1. stream and concurrent stream which is faster./
+
+✅ Normal Stream
+
+list.stream().forEach(x -> process(x));
+
+Runs sequentially (single thread)
+Order is maintained
+Less overhead
+
+
+✅ Parallel Stream (Concurrent Stream)
+
+list.parallelStream().forEach(x -> process(x));
+
+Runs using multiple threads (ForkJoinPool)
+Uses all CPU cores
+Order may not be maintained
+
+
+4. Real Interview Answer (Best)
+
+👉 Answer like this:
+
+Parallel stream is not always faster than a normal stream.
+It improves performance only for large datasets and CPU-intensive operations by utilizing multiple cores.
+However, for small data or simple tasks, sequential streams are faster due to lower overhead.
+
+
+
+
+
