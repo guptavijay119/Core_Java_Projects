@@ -6,6 +6,8 @@ public class Finding_the_highest_number_in_arrays_list {
 		// TODO Auto-generated method stub
 		
 		int[] array= {1,2,3,4,5};
+	    int a=	array[4];
+	   System.out.println(a);
 		
 		int max=array[array.length-3];
 		System.out.println("max number :"+max);

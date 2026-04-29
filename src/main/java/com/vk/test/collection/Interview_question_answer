@@ -1,0 +1,96 @@
+
+==============================
+  STREAM vs PARALLEL STREAM
+==============================
+
+Feature        | Stream (Sequential)        | Parallel Stream
+---------------------------------------------------------------
+Execution      | Sequential processing     | Parallel processing
+Threads        | Single thread             | Multiple threads (ForkJoinPool)
+Performance    | Slower for large data     | Faster for large datasets (if used properly)
+Order          | Maintains order           | May not maintain order
+Use Case       | Small / Medium data       | Large data processing
+
+---------------------------------------------------------------
+NOTES:
+- Stream processes elements one by one.
+- Parallel Stream splits data into multiple parts and processes simultaneously.
+- Use parallelStream() method to create parallel stream.
+- Not always faster — depends on CPU cores and task complexity.
+- Avoid parallel stream when order is important or for small datasets.
+
+---------------------------------------------------------------
+EXAMPLE:
+
+// Sequential Stream
+list.stream()
+    .forEach(System.out::println);
+
+// Parallel Stream
+list.parallelStream()
+    .forEach(System.out::println);
+
+---------------------------------------------------------------
+
+
+✅ 🔹 Stream (Sequential) – Internal Working
+
+
+💡 Flow:
+Collection → converted to Stream
+Uses Spliterator to iterate elements
+Operations form a pipeline
+Intermediate: filter(), map()
+Terminal: forEach(), collect()
+Execution happens sequentially (one by one)
+
+
+🎯 Interview Line:
+
+“Stream internally uses Spliterator and processes data 
+sequentially using a single thread with a pipeline of operations.”
+
+
+
+
+
+
+✅ 🔹 Parallel Stream – Internal Working
+
+
+💡 Flow:
+Data is split into multiple parts using Spliterator
+Tasks are submitted to ForkJoinPool.commonPool()
+Multiple threads process chunks in parallel
+Results are combined (merge phase)
+
+
+
+🎯 Interview Line:
+
+“Parallel stream internally uses Spliterator to divide 
+data and ForkJoinPool 
+to process tasks in parallel using multiple threads.”
+
+
+
+//Combined Answer 
+
+🎯 🔹 Final Best Answer (Say This)
+
+“Sequential stream internally uses Spliterator to 
+iterate elements and processes them in 
+a single thread using a pipeline of operations. 
+Parallel stream also uses Spliterator to split data but 
+processes it using multiple threads through ForkJoinPool 
+with a divide-and-conquer approach.”
+
+
+
+
+
+
+
+
+
+
