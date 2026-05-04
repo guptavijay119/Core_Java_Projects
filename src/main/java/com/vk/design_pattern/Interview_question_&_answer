@@ -1,0 +1,14 @@
+
+
+| Pattern         | Type       | Why Famous                         | Real Example               |
+| --------------- | ---------- | ---------------------------------- | -------------------------- |
+| Singleton       | Creational | Very common interview question     | Logger, Config             |
+| Factory Method  | Creational | Object creation based on condition | Payment method creation    |
+| Builder         | Creational | Immutable / complex objects        | StringBuilder, User object |
+| Prototype       | Creational | Clone object                       | Copy existing object       |
+| Adapter         | Structural | Convert incompatible interface     | Charger adapter            |
+| Decorator       | Structural | Add features dynamically           | Java I/O Streams           |
+| Proxy           | Structural | Control access / lazy load         | Spring AOP                 |
+| Observer        | Behavioral | Event notification                 | Event Listener             |
+| Strategy        | Behavioral | Multiple algorithms                | Payment option             |
+| Template Method | Behavioral | Common flow with custom steps      | Spring JdbcTemplate        |
