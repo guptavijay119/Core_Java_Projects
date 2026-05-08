@@ -1,0 +1,77 @@
+🔹   Main Categories of Map Methods
+
+       1️.   Insertion Methods
+
+        Used to add data into the map
+
+         put(K key, V value) → add/update value
+         putAll(Map m) → copy all entries
+         
+         
+         map.put("A", 10);
+         
+         
+       2️.  Retrieval Methods
+
+           Used to get values
+
+          get(Object key) → returns value
+          getOrDefault(key, defaultValue)
+          
+          map.get("A");  // 10
+          
+          
+          
+       3. Removal Methods
+
+           Used to delete data
+
+           remove(Object key)
+           remove(key, value)
+          
+           map.remove("A");
+           
+           
+        4️. Checking Methods
+
+        Used to check presence
+
+           containsKey(key)
+           containsValue(value)
+           isEmpty()
+           
+           map.containsKey("A");
+           
+       
+        5️.  Size / Utility Methods
+              size()
+              clear()   
+              
+        6. Traversal Methods (Very Important ⭐)
+
+             Used to iterate map
+
+             keySet() → returns all keys
+             values() → returns all values
+              entrySet() → key + value pair (most used in interview)     
+              
+              for (Map.Entry<String, Integer> entry : map.entrySet()) {
+             System.out.println(entry.getKey() + " " + entry.getValue());
+                                                                      }
+            10. replace(K key, oldVal, newVal)
+
+               Replace if old matches  
+               map.replace("A", 50, 100);      
+               
+               
+               
+                                                                 
+                                                                      
+                                                                      
+                                                                      
+              
+           
+           
+         
+         
+         
