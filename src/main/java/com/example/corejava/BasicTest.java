@@ -18,8 +18,13 @@ import java.util.*;
 
         // Sort values alphabetically
         List<String> sortedValues = new ArrayList<>(mapSet.values());
+        
+        List<Integer> sortedValues1 = new ArrayList<>(mapSet.keySet());
+        Collections.sort(sortedValues1);
         Collections.sort(sortedValues);
 
+      
+     
         // Print sorted values
         System.out.println("Sorted Values: " + sortedValues);
     }

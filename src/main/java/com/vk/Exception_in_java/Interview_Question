@@ -1,0 +1,22 @@
+
+
+| equals()                        | hashCode()                          |
+| ------------------------------- | ----------------------------------- |
+| Used to compare object contents | Used to generate integer hash value |
+| Returns `true` or `false`       | Returns integer value               |
+| Checks logical equality         | Used for hashing/searching          |
+| Defined in Object class         | Defined in Object class             |
+| Mainly used in comparison       | Mainly used in HashMap/HashSet      |
+
+equals()
+
+Used to compare contents/data of two objects.
+
+Example
+
+String s1 = new String("Java");
+String s2 = new String("Java");
+
+System.out.println(s1.equals(s2));  = true
+
+

@@ -1,0 +1,47 @@
+
+
+		/*  In Java 8, a Functional Interface is an interface that 
+		    contains exactly one abstract method. It can have multiple 
+		    default or static methods, but only one abstract method. 
+		
+		 
+		 
+		 
+		 
+
+		//Functional interfaces are mainly used with Lambda Expressions and Stream API.
+		
+		
+		
+		
+		Real-Time Interview Answer
+
+		Functional Interface is an interface that contains only one 
+		abstract method. It is mainly used to implement lambda expressions in Java. 
+		We can use @FunctionalInterface annotation to ensure the interface has only 
+		one abstract method. Example: Runnable, Comparator, Predicate etc.
+		
+		System.out.println("hello this is the functional interface in java all type:");
+		
+	
+	
+	
+	
+		
+*  Predefined Functional Interfaces in Java
+
+| Interface       | Method      | Purpose                         |
+|----------------|-------------|---------------------------------|
+| Runnable       | run()       | Thread execution                |
+| Callable       | call()      | Returns result                  |
+| Comparator     | compare()   | Sorting                         |
+| Predicate<T>   | test()      | Condition checking              |
+| Function<T,R>  | apply()     | Takes input and returns output  |
+| Consumer<T>    | accept()    | Consumes value                  |
+| Supplier<T>    | get()       | Supplies value                  |
+		*  
+		*
+		*
+		*
+		*
+		*/

@@ -1,0 +1,8 @@
+
+
+
+A Marker Interface is an empty interface in 
+Java that does not contain any methods or
+ variables. It is used to provide special 
+ information to JVM about a class. Examples
+  are Serializable and Cloneable.
