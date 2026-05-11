@@ -39,9 +39,65 @@
 | Function<T,R>  | apply()     | Takes input and returns output  |
 | Consumer<T>    | accept()    | Consumes value                  |
 | Supplier<T>    | get()       | Supplies value                  |
+
+
+
+
+
+| Interface       | Method                | Purpose          |
+| --------------- | --------------------- | ---------------- |
+| `Runnable`      | `run()`               | Thread execution |
+| `Callable<V>`   | `call()`              | Returns result   |
+| `Comparator<T>` | `compare(T o1, T o2)` | Sorting          |
+| `Comparable<T>` | `compareTo(T o)`      | Natural sorting  |
+
 		*  
 		*
 		*
 		*
 		*
 		*/
+		
+	List of Functional Interfaces in Java
+   
+   
+   Functional Interfaces Before Java 8			
+| Interface      | Package              | Method            | Purpose          |
+| -------------- | -------------------- | ----------------- | ---------------- |
+| Runnable       | java.lang            | run()             | Thread execution |
+| Callable<V>    | java.util.concurrent | call()            | Returns result   |
+| Comparator<T>  | java.util            | compare()         | Custom sorting   |
+| Comparable<T>  | java.lang            | compareTo()       | Natural sorting  |
+| ActionListener | java.awt.event       | actionPerformed() | Event handling   |
+
+
+
+
+   
+   java 8 Functional Interfaces
+
+   Package:
+   
+   java.util.function
+   
+| Interface         | Method   | Purpose             |
+| ----------------- | -------- | ------------------- |
+| Predicate<T>      | test()   | Condition checking  |
+| Function<T,R>     | apply()  | Input → Output      |
+| Consumer<T>       | accept() | Consumes value      |
+| Supplier<T>       | get()    | Supplies value      |
+| UnaryOperator<T>  | apply()  | Same type operation |
+| BinaryOperator<T> | apply()  | Two input same type |
+   
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
