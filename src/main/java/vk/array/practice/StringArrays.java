@@ -8,20 +8,29 @@ public class StringArrays {
 		
 		
 		
-		   System.out.println(stringarr[2]);
-	       System.out.println(stringarr[3]);
-	       
-	       System.err.println("-----------------------------------");
+		  // System.out.println(stringarr[2]);
+	     //  System.out.println(stringarr[3]);
+	     //  
+	     //  System.err.println("-----------------------------------");
 	       
 		
        
-       
-       
-       
-       for(int i=0; i < stringarr.length;i++) {
-    	   System.out.println(stringarr[i]);
+       for (String string : stringarr) {
     	   
-       }
+    	   if (string.equalsIgnoreCase("dinesh")) {
+    		   System.out.println("there dinesh ");
+    		   
+    		   
+		}
+    	   else {
+    		   System.out.println(string);
+    	   }
+    	  
+		
+	}
+       
+       
+       
        
 	}
 
