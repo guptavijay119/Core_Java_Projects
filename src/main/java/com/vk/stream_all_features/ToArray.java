@@ -1,23 +1,22 @@
 package com.vk.stream_all_features;
 
 import java.util.Arrays;
+import java.util.Collections;
 
-public class Count {
+public class ToArray {
 
 	public static void main(String[] args) {
 		
-		//12. count()
-
-		//Counts elements.
 		
-		 long count =
+		 Object[] arr =
 	                Arrays.asList(10,20,30)
 	                      .stream()
-	                      .count();
+	                      .toArray();
+		 
+		 
+		 
 
-	        System.out.println(count);
-		
-		
+	        System.out.println(Arrays.toString(arr));
 
 	}
 
