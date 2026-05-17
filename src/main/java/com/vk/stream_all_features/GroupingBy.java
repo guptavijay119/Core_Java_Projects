@@ -19,7 +19,9 @@ public class GroupingBy {
 	                Arrays.asList("Java","Spring","Java","SQL","sql");
 		 
 		 
-		 Map<String, Long> collect = names.stream().collect(Collectors.groupingBy(x -> x,Collectors.counting()));
+		// Map<String,Long> collect= names.stream().collect(Collectors.groupingBy(x -> x , Collectors.counting()));
+		 
+	   Map<String,Long> collect= names.stream().map(String :: toLowerCase).collect(Collectors.groupingBy(x -> x , Collectors.counting()));
 		 
 		 
 		 System.out.println(collect);
