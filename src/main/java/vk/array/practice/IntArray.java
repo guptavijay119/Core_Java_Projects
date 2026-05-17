@@ -7,6 +7,10 @@ public class IntArray {
 		
 		int[]  arrays= {10,20,30,40,50};
 		
+		
+		
+		
+		
 	//	int i1=arrays[4];
 		//System.err.println(i1);
 		

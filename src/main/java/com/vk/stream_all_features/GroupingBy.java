@@ -13,6 +13,8 @@ public class GroupingBy {
 		
 		//collect(Collectors.groupingBy(condition))
 		
+		//Your code is correct. It counts how many times each word appears.
+		
 		 List<String> names =
 	                Arrays.asList("Java","Spring","Java","SQL","sql");
 		 
@@ -21,6 +23,35 @@ public class GroupingBy {
 		 
 		 
 		 System.out.println(collect);
+		 
+		 System.out.println("------------------------------------------------");
+		 
+		 List<String> charcount = Arrays.asList("a", "abc", "abcd", "abcdef","ABCD");
+		 
+		 
+		 
+	Map<String, Long> result=charcount.stream().map(String ::toLowerCase).collect(Collectors.groupingBy(X -> X,Collectors.counting()));
+	
+	System.out.println(result);
+	
+	
+	
+	
+	
+	
+	
+	
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 		
 		 
 		 
