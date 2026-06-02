@@ -2,3 +2,10 @@
 
 Stream API is used to process collections of data in a functional way.
 
+| Type   | Method    |
+| ------ | --------- |
+| Array  | `length`  |
+| List   | `size()`  |
+| Stream | `count()` |
+
+

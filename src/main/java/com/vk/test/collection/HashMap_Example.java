@@ -15,7 +15,7 @@ public class HashMap_Example {
 		HashMap<Integer, String> map=new HashMap<>();
 		
 		map.put(101, "vijay");
-	    map.put(102, "ajay");
+	    map.put(101, "ajay");
 	    System.out.println(map);
 	    
 	     

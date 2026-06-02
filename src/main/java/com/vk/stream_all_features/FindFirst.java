@@ -1,6 +1,7 @@
 package com.vk.stream_all_features;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class FindFirst {
@@ -17,6 +18,23 @@ public class FindFirst {
 		
 		Double double1 = list.stream().findFirst().get();
 		System.out.println(double1);
+		
+		System.out.println("---------find the maximum salary given---------");
+		
+		
+		List<Integer> salary=Arrays.asList(1000,2000,8000,40000,60000);
+		
+	//	Collections.reverse(salary);
+		
+		Integer integer = salary.stream().sorted().findFirst().get();
+		
+		System.out.println(integer);
+		
+		
+  		
+		  
+		  
+		  
 		
  		
 		

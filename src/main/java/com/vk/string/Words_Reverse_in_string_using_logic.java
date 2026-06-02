@@ -30,7 +30,7 @@ public class Words_Reverse_in_string_using_logic {
     	        // ===============================
                 String sentence1 = "sachin";
     	        
-                String sentence = "my name is vijay ";
+                String sentence = "vijay";
     	        
     	       StringBuilder sb=new StringBuilder(sentence1);
     	       sb.reverse();
@@ -38,18 +38,17 @@ public class Words_Reverse_in_string_using_logic {
     	       
     	       
     	       
-    	       System.out.println("-------------------------");
+    	      
+    	    //   String sentence = "my name is vijay ";
     	       
-    	       List<String>  list1=Arrays.asList(sentence.split(" "));
+    	       List<String> list2=Arrays.asList(sentence.split(""));
     	       
-    	       Collections.reverse(list1);
-    	     	  
-    	    // System.out.println(size);
+    	       Collections.reverse(list2);
+    	       System.out.println(list2);
+    	       String collect = list2.stream().collect(Collectors.joining(""));
+    	       System.out.println(collect);
     	       
-             String result=  list1.stream().collect(Collectors.joining(" "));
-    
-            System.out.println(result);
-            
+    	       
             
            
       

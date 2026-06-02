@@ -3,6 +3,8 @@ package com.vk.abstract_class_example;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 interface Bank {
 
 	abstract void Savefordatamethods();
@@ -10,6 +12,8 @@ interface Bank {
 	abstract void displayfordatamethods();
 
 	abstract void DatabaseConfigurationMethods();
+	
+	
 
 	// void display() {
 	// System.out.println("Bank Details");
@@ -93,7 +97,7 @@ class HDFC implements Bank {
 
 
 
-
+@SpringBootApplication(exclude = {SBI.class,Bank.class},excludeName = "com.vk.abstract_class_example.Bank")
 class Test {
 	public static void main(String[] args) {
 

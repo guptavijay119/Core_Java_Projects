@@ -1,4 +1,4 @@
-package com.example.java.keywords;
+package com.example.corejava;
 
 
 

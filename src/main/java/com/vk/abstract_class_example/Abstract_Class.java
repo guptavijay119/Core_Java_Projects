@@ -17,9 +17,10 @@ package com.vk.abstract_class_example;
 	   
 	   
 		
-		void sleep() {    // normal methods 
+		public String sleep() {    // normal methods 
 			
 			System.out.println("this is the void methods....");
+	   return "";
 		}
 	   
 	   

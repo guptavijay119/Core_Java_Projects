@@ -21,10 +21,12 @@ public class GroupingBy {
 		 
 		// Map<String,Long> collect= names.stream().collect(Collectors.groupingBy(x -> x , Collectors.counting()));
 		 
-	   Map<String,Long> collect= names.stream().map(String :: toLowerCase).collect(Collectors.groupingBy(x -> x , Collectors.counting()));
+	      Map<String, Long>  results=names.stream().collect(Collectors.groupingBy(x -> x ,Collectors.counting()));
+	      
+	      
 		 
 		 
-		 System.out.println(collect);
+		 System.out.println(results);
 		 
 		 System.out.println("------------------------------------------------");
 		 

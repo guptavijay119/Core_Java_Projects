@@ -1,5 +1,3 @@
-
-
 /* **1. What is a static keyword in Java?**
  * 
 
@@ -15,3 +13,8 @@ we can access its members without creating
 instances of the Math class. For example, 
 
 */
+
+
+
+
+
