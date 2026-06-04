@@ -2,13 +2,53 @@ package com.example.corejava;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Test {
-	
+	private int empid;
 
 	public static void main(String[] args) {
-		//public static final test="vijay"
+		
+		
+		
+		
+		
+		
+		//we can reverse it word and character
+           String s="Apple";
+		
+		StringBuilder sb=new StringBuilder(s);
+		sb.reverse();
+		System.out.println(sb);
+		
+		
+		
+		
+		String s2="Apple Banana Cherry";
+		
+		//  o/p String s2="Cherry, Banana,Apple";
+		
+		List<String>  list=Arrays.asList(s2.split(" "));
+		
+		//Reverse the list
+		Collections.reverse(list);
+	//	Collections.sort(list);
+		System.out.println(list);
+		
+		
+		
+		
+		
+		
+		String str1 = "Hello";
+		String str2 = "Hello";
+		String str3 = new String("Hello");
+		System.out.println("str1.equals(str2): " + str1.equals(str2)); //true
+		System.out.println("str1.equals(str3): " + str1.equals(str3));  //true
+		System.out.println("this is the false : "+ str1==str3); //false
+
+		
 		
 		
 		final List<String> s1=Arrays.asList();

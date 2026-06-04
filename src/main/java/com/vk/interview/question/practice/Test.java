@@ -10,6 +10,16 @@ public class Test {
 	public static void main(String[] args) {
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//Q2. Find the largest and second largest number in an array.
 		
 		Integer[] num= {10,3,7,1};
