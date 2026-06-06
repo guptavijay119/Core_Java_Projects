@@ -4,15 +4,27 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 public class Test {
 	private int empid;
+	
+	
+	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
+		Runnable r=()->System.out.println("this is the functional interface");
 		
+		r.run();
 		
+		Callable<String> call=()->{
+			
+			
+			return "this is callable inteface" ;
+		};
 		
+		System.out.println(call.call());
 		
 		
 		//we can reverse it word and character

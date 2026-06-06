@@ -24,7 +24,7 @@ public class FindFirst {
 		
 		List<Integer> salary=Arrays.asList(1000,2000,8000,40000,60000);
 		
-	//	Collections.reverse(salary);
+		Collections.reverse(salary);
 		
 		Integer integer = salary.stream().sorted().findFirst().get();
 		
