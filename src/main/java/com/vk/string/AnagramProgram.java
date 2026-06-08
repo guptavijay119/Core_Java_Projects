@@ -9,22 +9,36 @@ public class AnagramProgram {
 		String s1="listen";
 		String s2="silent";
 		
-		char[] a1=s1.toCharArray();
-		char[] a2=s2.toCharArray();
+		String s3="night";
+		String s4="thing";
 		
-		Arrays.sort(a1);
-		Arrays.sort(a2);
-		
-		if(Arrays.equals(a1,a2)) {
-			System.out.println("AnagramProgram string");
+		char[] s1char=s1.toCharArray();
+	    char[] s2char = s2.toCharArray();
+	    
+	       
+	    
+	    
+	    
+	    Arrays.sort(s1char);
+	    Arrays.sort(s2char);
+	    
+	    if (Arrays.equals(s1char, s2char)) {
+	    	System.out.println("this is the anargram words : " +s1 +" "+ s2);
+			
 		}
-		else {
-			System.out.println("not AnagramProgram string");
-		}
+	    else {
+	    	System.out.println("this is not anargram words : ");
+	    }
+		          
+		          
 		
 		
 		
-
+		
+		
+		
+		
+		
 	}
 
 }
