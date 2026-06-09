@@ -1,9 +1,11 @@
 package com.vk.interview.question.practice;
 
+import java.text.Collator;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Xebia_Technology {
 
@@ -12,15 +14,20 @@ public class Xebia_Technology {
 		
 	//	Q.1  MAKE IT 'EVEN' AND 'ODD' GROUP FOR GIVEN INTEGER LIST
 	List<Integer> list =Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+	
+List<Integer> EVEN=	list.stream().filter(x->x%2==0).collect(Collectors.toList());
+
+List<Integer> ODD=	list.stream().filter(x->x%3==0).collect(Collectors.toList());
+
+
+System.out.println(EVEN);
+System.out.println(ODD);
+
+
 		
-	Map<Boolean, List<Integer>> collect = list.stream().collect(Collectors.partitioningBy(x->x %2==0));
-		   
-	List<Integer> evenlist=	 collect.get(true);
 	
-	List<Integer> oddlist=	 collect.get(false);
 	
-	System.out.println(evenlist);
-	System.out.println(oddlist);
+	
 		   
 
 	}
