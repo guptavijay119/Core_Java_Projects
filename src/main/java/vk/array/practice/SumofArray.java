@@ -2,8 +2,6 @@ package vk.array.practice;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class SumofArray {
 
@@ -11,11 +9,24 @@ public class SumofArray {
 		
 		
 		
-		int[] sumarr= {10,1,3,4,5,6};
+		int[] sumarr= {10,1,3,4,5,6,1};
 	
-	//	1-
-	int a=	Arrays.stream(sumarr).sum();
-	System.out.println(a);
+      int sumval=    Arrays.stream(sumarr).sum();
+       System.out.println(sumval);
+	
+	System.out.println("-------------------------------");
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	Arrays.sort(sumarr);
 	System.out.println(Arrays.toString(sumarr));

@@ -12,11 +12,13 @@ public class Largest_Number_in_Array {
 		List<Integer> list=Arrays.asList(largest);
 		
 		//find largest number
-	  Integer integer = list.stream().sorted(Collections.reverseOrder()).findFirst().get();
+	  Integer integer = list.stream().sorted(Collections.reverseOrder()).
+			  findFirst().get();
 	  System.out.println(integer);
 	  
 	  //find 2nd largest number
-	  Integer integer1 = list.stream().sorted(Collections.reverseOrder()).skip(1).findFirst().get();
+	  Integer integer1 = list.stream().sorted(Collections.reverseOrder()).
+			  skip(1).findFirst().get();
 	  System.out.println(integer1);
 	  
 	//  find the first lowest

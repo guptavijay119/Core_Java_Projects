@@ -1,7 +1,5 @@
 package com.vk.string;
 
-import java.util.Iterator;
-
 public class Palindrome_String_Check {
 
 	public static void main(String[] args) {

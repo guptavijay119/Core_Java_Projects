@@ -6,14 +6,6 @@ public class StringArrays {
 		
 		String[] stringarr={"vijay","sonu","dinesh","manoj"};
 		
-		
-		
-		  // System.out.println(stringarr[2]);
-	     //  System.out.println(stringarr[3]);
-	     //  
-	     //  System.err.println("-----------------------------------");
-	       
-		
        
        for (String string : stringarr) {
     	   

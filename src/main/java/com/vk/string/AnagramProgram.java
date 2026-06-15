@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class AnagramProgram {
 
 	public static void main(String[] args) {
-		
 		String s1="listen";
 		String s2="silent";
 		
@@ -14,10 +13,6 @@ public class AnagramProgram {
 		
 		char[] s1char=s1.toCharArray();
 	    char[] s2char = s2.toCharArray();
-	    
-	       
-	    
-	    
 	    
 	    Arrays.sort(s1char);
 	    Arrays.sort(s2char);

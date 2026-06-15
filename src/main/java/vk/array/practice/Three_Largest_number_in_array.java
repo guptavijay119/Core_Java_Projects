@@ -15,14 +15,32 @@ public class Three_Largest_number_in_array {
 		List<Integer>  list =Arrays.asList(lar);
 		
 		
-		//Collections.sort(list);
+		Integer collect = list.stream().sorted(Collections.reverseOrder())
+				.findFirst().get();
+			
+		System.out.println(collect);
 		
-		System.out.println(list);
+			
 		
-		List<Integer> collect = list.stream().sorted(Collections.reverseOrder()).limit(3).collect(Collectors.toList());
-		
-		
-		List<Integer> collect1 = list.stream().sorted(Collections.reverseOrder()).distinct().limit(7).filter(x-> x >= 50).collect(Collectors.toList());
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			List<Integer> collect1 = list.stream().sorted(Collections.reverseOrder()).
+				distinct().limit(7).filter(x-> x >= 50).collect(Collectors.toList());
 		
 		
 		

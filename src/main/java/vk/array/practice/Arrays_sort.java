@@ -1,7 +1,9 @@
 package vk.array.practice;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class Arrays_sort {
 
@@ -12,6 +14,13 @@ public class Arrays_sort {
 		
 		
 		   Arrays.sort(arrays);
+		  
+		   Integer[] rotate= {1,2,3,4,5,6};
+		   List<Integer> list=Arrays.asList(rotate);
+		   
+		   
+		   Collections.rotate(list,2);
+		   System.out.println(list);
 		   
 		  // | Statement                                     | Result              |
 		  // | --------------------------------------------- | ------------------- |

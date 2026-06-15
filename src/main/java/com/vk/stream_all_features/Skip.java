@@ -12,7 +12,7 @@ public class Skip {
 	List<Integer> li=Arrays.asList(10,20,30,40,50,60,70);
 	
 	
-	List<Integer> liSkip=   li.stream().skip(4).collect(Collectors.toList());
+	Integer liSkip=   li.stream().skip(4).findFirst().get();
 	
 	System.out.println(liSkip);
 	
