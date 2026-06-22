@@ -5,6 +5,9 @@ import java.util.*;
  class Test1 {
     public static void main(String[] args) {
     	
+    	String s="vijay";
+    	
+    	
     	
     	
         Map<Integer, String> mapSet = new HashMap<>();
@@ -14,7 +17,8 @@ import java.util.*;
         mapSet.put(222, "Santosh");
         mapSet.put(333, "Tarun"); // "Dileep" is overwritten
         mapSet.put(444, "Sanjeev");
-        mapSet.put(444, "Sanjeev");
+        mapSet.put(444, "Sanjeev---");
+        System.out.println(mapSet);
 
         // Sort values alphabetically
         List<String> sortedValues = new ArrayList<>(mapSet.values());

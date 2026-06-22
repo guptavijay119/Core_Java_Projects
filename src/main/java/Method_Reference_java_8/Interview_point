@@ -1,0 +1,21 @@
+
+ 
+ Method Reference in Java 8 - Interview Definition
+	
+
+	Definition:
+
+	A Method Reference is a feature introduced in Java 8 that allows us to refer to an 
+	existing method by its name instead of writing a lambda expression. 
+	It is used when the lambda expression only calls an 
+	existing method, making the code 
+	more readable and concise.
+	
+	syntax
+	
+	ClassName::methodName
+	
+	objectReference::methodName
+	
+
+	
