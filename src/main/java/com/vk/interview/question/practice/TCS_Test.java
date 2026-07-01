@@ -7,10 +7,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class TCS_Test {
-
-	
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 	   //   Q.1	find the 6 th highest salary of database
 		
@@ -19,7 +16,22 @@ public class TCS_Test {
 		
 		
 		//Q.2	print chararcters frequency iteration sorting characters wise
+<<<<<<< HEAD
 		   String input = "I love my country";
+=======
+		String input = "I love my country";
+		//List<String> list=Arrays.asList(input.split(""));
+	//Map<String, Long> resuMapsort=	list.stream().collect(Collectors.groupingBy(x->x,Collectors.counting()));
+	//System.out.println(resuMapsort);
+		
+		List<String> list=Arrays.asList(input.split(""));
+		
+	Map<String, Long> result=list.stream().sorted().collect(Collectors.groupingBy(str->str, Collectors.counting()));
+	System.out.println(result);
+	
+	
+	
+>>>>>>> c50c3d82376406e4cf56bc67b4f43622bd0fbb60
 	
 		   // using stream api 
 		   
