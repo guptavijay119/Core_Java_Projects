@@ -19,13 +19,15 @@ public class TCS_Test {
 		
 		
 		//Q.2	print chararcters frequency iteration sorting characters wise
-		String input = "I love my country";
-		List<String> list=Arrays.asList(input.split(""));
-		
-	Map<String, Long> resuMapsort=	list.stream().collect(Collectors.groupingBy(x->x,Collectors.counting()));
-	System.out.println(resuMapsort);
+		   String input = "I love my country";
 	
-	
+		   // using stream api 
+		   
+		   List<String> strlist=Arrays.asList(input.split(""));
+		   
+		   Map<String, Long> collect = strlist.stream().collect(Collectors.groupingBy(str->str,Collectors.counting()));
+		   System.out.println(collect);
+		   
 	
 	
 	//Q.3 what is the default size of the array
